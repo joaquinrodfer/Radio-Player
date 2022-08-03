@@ -18,9 +18,3 @@ let playing = false;
 let cover = document.querySelector(".cover")
 let coverImage = document.querySelector(".rde-player-station-logo")
 let title = document.querySelector(".title")
-let radio = document.querySelector(".embedded-radio-player")
-
-// Changing station
-radio.setAttribute("data-playstation" , "los40")
-
-cover.setAttribute("src" , songData[0].cover)

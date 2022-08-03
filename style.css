@@ -29,6 +29,74 @@ body {
     box-shadow: 3px 3px 5px black;
 }
 
+/* Header */
+header {
+    align-self: flex-start;
+    margin-bottom: 30px;
+}
+
+#menu ul li {
+    background-color:#6d6875;
+}
+
+#menu ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+#menu ul a {
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  font-weight:400;
+  font-size:15px;
+  padding:10px;
+  font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+#menu ul li {
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0;
+}
+
+#menu ul li:hover {
+  background:#b5838d;
+}
+
+#menu ul ul {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  padding:0;
+}
+
+#menu ul ul li {
+  float:none;
+  width:150px
+}
+
+#menu ul ul a {
+  line-height:120%;
+  padding:10px 15px;
+}
+
+#menu ul li:hover > ul {
+  display:block;
+}
+
+.top:first-of-type {
+    border-top-left-radius: 10px;
+}
+
+.top:last-of-type {
+    border-top-right-radius: 10px;
+}
 
 /* Cover */
 .cover {
@@ -37,67 +105,4 @@ body {
     border-radius: 20px;
     transition: height 3s;
     background: linear-gradient(#6d6875, #b5838d);
-}
-
-/* Title */
-.title {
-    margin-top: 1rem;
-    font-weight: 700;
-}
-
-.author {
-    margin-bottom: 1rem;
-}
-
-/* Progress bar */
-.progressContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.progressBar {
-    height: 10px;
-    background: black;
-    border-radius: 40px;
-}
-
-.progressBar .bar {
-    height: 5px;
-    background: #b5838d;
-    border-radius: 45px;
-    margin-top: 2.5px;
-}
-
-.time {
-    font-weight: 700;
-}
-
-/* Buttons */
-.buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 50%;
-}
-
-.button {
-    background-color: transparent;
-    border: none;
-}
-
-.button i {
-    font-size: 40px;
-    cursor: pointer;
-}
-
-.button.play {
-    display: block;
-}
-
-.button.play i.pause {
-    display: none;
 }

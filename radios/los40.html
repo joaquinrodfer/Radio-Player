@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ae35fc02a6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="../style.css" type="text/css">
     <link rel="icon" type="image/png" href="./images/music-icon.png">
     <script src="js/main.js" defer></script>
     <script src="js/createRadio.js"></script>
@@ -16,21 +16,39 @@
 <body>
     <!-- Player -->
     <main class="player">
+
+        <!-- Header -->
+        <header>
+            <nav id="menu">
+                <ul>
+                    <li class="top" id="main-menu"><a href="../index.html">Inicio</a></li>
+                    <li class="top" id="radios"><a href="#">Radios</a>
+                        <ul id="radio-list">
+                            <li><a href="los40.html">Los 40</a></li>
+                            <li><a href="cadenaser.html">Cadena Ser</a></li>
+                            <li><a href="lagozadera.html">La Gozadera</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
         <!-- Cover -->
-        <img class="cover" src="images/la-dificil.png" alt="Cover">
+        <img class="cover" src="https://pbs.twimg.com/profile_images/1546463891697422336/Ug3uBt63_400x400.jpg"
+            alt="Cover">
 
         <!-- Title -->
         <div class="title"></div>
 
         <!-- Radio -->
         <script>(function (d, s) { if (!window.rel) { s = d.createElement("script"); s.type = "text/javascript"; s.async = true; s.id = "radio-de-embedded"; s.src = "https://www.radio.es/inc/microsite/js/full.js"; d.getElementsByTagName("head")[0].appendChild(s); window.rel = true; } }(document));</script>
-
         <div class="ng-app-embedded">
-            <div ui-view class="microsite embedded-radio-player" data-playerwidth="100%" data-playertype="web_embedded"
-                data-playstation="los40" data-autoplay="true"
-                data-apikey="df04ff67dd3339a6fc19c9b8be164d5b5245ae93"></div>
-        </div><noscript><a href="https://www.radio.es/s/cadenaser" target="_blank">LOS 40 en
+            <div ui-view class="microsite embedded-radio-player" data-playerwidth="340px" data-playertype="web_embedded"
+                data-playstation="los40" data-autoplay="true" data-apikey="df04ff67dd3339a6fc19c9b8be164d5b5245ae93">
+            </div>
+        </div><noscript><a href="https://www.radio.es/s/los40" target="_blank">Los 40 Principales España en
                 radio.es</a></noscript>
+
 
     </main>
 </body>
