@@ -1,6 +1,6 @@
 # Music Player
 
-This is a fully functional design of a web music player component.
+This is a fully functional design of a web radio player component.
 ## Table of contents
 
 - [Overview](#overview)
@@ -19,14 +19,12 @@ This is a fully functional design of a web music player component.
 
 Users should be able to:
 
-- Play or pause any song
-- Change songs, forward or backwards
-- See the current reproduction time and the total time, as well as the cover, title and author of the song
-- See the change on the reproduction bar
+- Play or pause any radio
+- Change between the different radios
 
 ### Links
 
-- [Solution URL](https://joaquinrodfer.github.io/Music-Player/)
+- [Solution URL](https://joaquinrodfer.github.io/Radio-Player/)
 
 ## My process
 
@@ -39,7 +37,7 @@ Users should be able to:
 
 ### What I learned
 
-This was the most challenging project I build with JS. I´ve learnt a lot about this language
+I had to use an script from [Radio.es](https://www.radio.es/).
 
 ## Author
 
